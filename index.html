@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM project</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <!--nav container-->
+        <header class="header-container">
+        <div id="cart">
+        <h1>Shopping Cart</h1>
+    </div>
+    <button class="cart_btn">
+        <img src="cart.iconnn.png" alt="icon"/>
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <span>cart</span>
+    </button>
+    </header>
+
+    <main>
+        <section id="product-list" class="product-list">
+            <!-- Product listings go here -->
+            <div class="product" data-id="1">
+                <img src="dior lip oil.jpg" alt="dior lip oil">
+                <h2>DIOR LIP OIL</h2>
+                <p>$52.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data-id="2">
+                <img src="the ordinary lash serum.jpg" alt="lash serum">
+                <h2>THE ORDINARY LASH AND BROW GROWTH SERUM</h2>
+                <p>$15.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="product" data id="3">
+                <img src="green tea cream.jpg" alt="green tea.jpg">
+                <h3>ELIZABETH ARDEN GREEN TEA HONEY DROPS BODY CREAM</h3>
+                <P>$33.00</P>
+                <button class="add-to-cart-btn">Add to cart</button>
+            </div> 
+            <div class="product" data id="4">
+                <img src="elizabeth arden red door.jpg" alt="red door">
+                <h3>ELIZABETH ARDEN RED DOOR EAU DE TOILETTE SPRAY VAPORISATEUR</h3>
+                <P>$40.00</P>
+                <button class="add-to-cart-btn">Add to cart</button>
+            </div>       
+            <div class="product" data id="5">
+                <img src="julliet has a gun not a perfume.jpg" alt="perfume">
+                <h3>JULLIET HAS A GUN NOT A PERFUME EAU DE PARFUM</h3>
+                <P>$70.00</P>
+                <button class="add-to-cart-btn">Add to cart</button>
+            </div>       
+            <!-- mr busayo you can add your own products here -->
+        </section>
+
+        <aside id="shopping-cart" class="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
